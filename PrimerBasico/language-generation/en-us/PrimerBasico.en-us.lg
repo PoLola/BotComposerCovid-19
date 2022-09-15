@@ -1,0 +1,107 @@
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Bienvenido a Covid Bot!!!
+- Soy NurseBot tu enfermero Virtual y estoy aquí para ayudarte.
+- Tienes dudas acerca del Covid? has llegado al lugar adecuado!!
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Lo que has preguntado tiene relacion con el coronavirus? No tengo una respuesta para esa pregunta.
+- Que extraño, no encuentro una respuesta para tu pregunta.
+- No entendi tu pregunta. Por favor, preguntame de nuevo.
+# TextInput_Prompt_i1OnPq()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_Ys4Qta()
+- ${expandText(@answer)}
+
+# TextInput_Prompt_C1QVOD()
+[Activity
+    Text = ${TextInput_Prompt_C1QVOD_text()}
+]
+
+# TextInput_Prompt_C1QVOD_text()
+- Cual es tu nombre?
+- Como te llamas?
+- Ya te he dicho mi nombre, cual es el tuyo?
+# SendActivity_p3WXQD()
+[Activity
+    Text = ${SendActivity_p3WXQD_text()}
+]
+
+# SendActivity_p3WXQD_text()
+- Es un gusto conocerte ${$dialog.UserName}
+- Que bueno tenerte aqui hoy ${$dialog.UserName}
+# SendActivity_QLfhH3()
+[Activity
+    Text = ${SendActivity_QLfhH3_text()}
+]
+
+# SendActivity_QLfhH3_text()
+- Que te gustaria saber acerca del covid?
+- Hazme una pregunta 
+- Estoy para responder tus dudas acerca del coronavirus, preguntame...
+# SendActivity_ObTfU8()
+[Activity
+    Text = ${SendActivity_ObTfU8_text()}
+]
+
+# SendActivity_ObTfU8_text()
+- ${BotHelper2()}
+# SendActivity_GHVxk3()
+[Activity
+    Text = ${SendActivity_GHVxk3_text()}
+]
+
+# SendActivity_GHVxk3_text()
+- ${BotHelper1()}
+# SendActivity_fEqZCe()
+[Activity
+    Text = ${SendActivity_fEqZCe_text()}
+]
+
+# SendActivity_fEqZCe_text()
+- ${BotHelper1()}
+# SendActivity_MVMREV()
+[Activity
+    Attachments = ${SendActivity_MVMREV_attachment_nV8qnu()}
+]
+
+# SendActivity_MVMREV_attachment_nV8qnu()
+[HeroCard
+
+  images = https://i.pinimg.com/originals/47/8d/e1/478de1a9eab01aba857fc918a0d43cf8.gif
+
+]
+
+# SendActivity_tVTVUY()
+[Activity
+    Attachments = ${SendActivity_tVTVUY_attachment_O7vTtW()}
+]
+
+# SendActivity_tVTVUY_attachment_O7vTtW()
+[HeroCard
+  images = https://image.pngaaa.com/527/1683527-middle.png
+]
+
+# SendActivity_5Ic9Fs()
+[Activity
+    Attachments = ${SendActivity_5Ic9Fs_attachment_qmCeD0()}
+]
+
+# SendActivity_5Ic9Fs_attachment_qmCeD0()
+[HeroCard
+
+  images = https://media.baamboozle.com/uploads/images/84984/1609735249_62502
+
+]

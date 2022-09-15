@@ -1,0 +1,7 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_PrimerBasico",
+  "recognizers": {
+    "en-us": "PrimerBasico.en-us.lu"
+  }
+}

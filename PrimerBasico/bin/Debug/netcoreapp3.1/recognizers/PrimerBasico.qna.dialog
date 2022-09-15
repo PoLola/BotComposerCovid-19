@@ -1,0 +1,9 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_PrimerBasico",
+  "recognizers": {
+    "en-us": "PrimerBasico.en-us.qna",
+    "es-es": "PrimerBasico.es-es.qna",
+    "": "PrimerBasico.es-es.qna"
+  }
+}

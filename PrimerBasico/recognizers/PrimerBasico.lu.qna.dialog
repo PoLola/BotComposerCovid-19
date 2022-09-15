@@ -1,0 +1,7 @@
+{
+  "$kind": "Microsoft.CrossTrainedRecognizerSet",
+  "recognizers": [
+    "PrimerBasico.lu",
+    "PrimerBasico.qna"
+  ]
+}

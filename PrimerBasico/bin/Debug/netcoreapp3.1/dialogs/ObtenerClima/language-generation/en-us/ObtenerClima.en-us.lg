@@ -1,0 +1,49 @@
+[import](common.lg)
+
+# SendActivity_bLZEPf()
+[Activity
+    Text = ${SendActivity_bLZEPf_text()}
+]
+
+# SendActivity_bLZEPf_text()
+- Averigua la temperatura en determinada ciudad...
+- Quieres conocer el clima en algun lugar?
+- Preguntame por el clima de una ciudad
+# TextInput_Prompt_g6R046()
+[Activity
+    Text = ${TextInput_Prompt_g6R046_text()}
+]
+
+# TextInput_Prompt_g6R046_text()
+- De que ciudad deseas saber la temperatura?
+- De que lugar deseas conocer el clima?
+- Cual es el nombre de la cuidad de la cual quieres consultar su clima?
+- Que ciudad quieres consultar ?
+# TextInput_InvalidPrompt_g6R046()
+[Activity
+    Text = ${TextInput_InvalidPrompt_g6R046_text()}
+]
+
+# TextInput_InvalidPrompt_g6R046_text()
+- No encuentro esa ciudad podrias verificar el nombre de la ciudad, e intentar escribirlo nuevamente?
+# TextInput_UnrecognizedPrompt_g6R046()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_g6R046_text()}
+]
+
+# TextInput_UnrecognizedPrompt_g6R046_text()
+- No encuentro esa ciudad podrias verificar el nombre de la ciudad, e intentar escribirlo nuevamente?
+# SendActivity_xEkqR7()
+[Activity
+    Text = ${SendActivity_xEkqR7_text()}
+]
+
+# SendActivity_xEkqR7_text()
+- Ocurrio un error en la consulta
+# SendActivity_lcEHVU()
+[Activity
+    Text = ${SendActivity_lcEHVU_text()}
+]
+
+# SendActivity_lcEHVU_text()
+- - La temperatura es ${dialog.celcius}C  y la descripcion es ${dialog.weather}.
